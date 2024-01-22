@@ -1,0 +1,5 @@
+{
+    "python.analysis.typeCheckingMode": "basic",
+    "python.envFile": "${workspaceFolder}/.env",
+    "python.analysis.extraPaths": ["C:/Users/Ayden/dev/RL/blackjack_dqn/src"]
+}
