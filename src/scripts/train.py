@@ -5,7 +5,6 @@ import random
 from collections import deque
 import torch
 import torch.nn as nn
-import wandb
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
@@ -16,17 +15,15 @@ import argparse
 import dataclasses
 import torch
 import wandb
-import gym
 from collections import namedtuple
 
 from blackjack_dqn.agents import DQNAgent
 from blackjack_dqn.hyperparameters import DQNHyperparameters
 from blackjack_dqn.utils import Policy
 
-
-POLICIES = {
-    "dqn": Policy(DQNAgent, DQNHyperparameters),
-}
+# POLICIES = {
+#     "dqn": Policy(DQNAgent(), DQNHyperparameters()),
+# }
 
 # run = wandb.init(project="rl_dqn_blackjack", entity="aydenkhalil619", config=hyperparameters)
 
@@ -44,5 +41,5 @@ def parse_args() -> argparse.Namespace:
 def main():
     args = parse_args()
 
-    hp = POLICIES[args.policy].params()
+    # hp = POLICIES[args.policy].params()
     

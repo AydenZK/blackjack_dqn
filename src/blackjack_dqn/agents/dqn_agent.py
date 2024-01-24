@@ -12,3 +12,5 @@ class DQNAgent(BaseAgent):
     def act(self, state):
         pass
 
+    def learn(self):
+        pass

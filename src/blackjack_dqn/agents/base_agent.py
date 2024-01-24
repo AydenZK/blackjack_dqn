@@ -14,6 +14,10 @@ class BaseAgent(ABC):
     def act(self, state):
         raise NotImplementedError()
 
+    @abstractmethod
+    def learn(self):
+        raise NotImplementedError()
+
     def save(self, save_path):
         with open(save_path, 'wb') as f:
             pickle.dump(self, f)

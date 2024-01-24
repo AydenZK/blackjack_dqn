@@ -16,6 +16,6 @@ class BaseHyperparameters:
 
 @dataclass
 class DQNHyperparameters:
-    target_update_frequency: int = 50 # per episode
-    metric_measure_frequency: int = 500 # per episode
-    policy_measure_frequency: int = 10000 # per episode
+    target_update_frequency: int = 50 # episodes
+    log_frequency: int = 500 # episodes
+    log_plot_frequency: int = 10000 # episodes
